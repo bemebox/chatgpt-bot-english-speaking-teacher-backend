@@ -1,3 +1,5 @@
 # List of required Python packages
-fastapi
-uvicorn
+fastapi # framework used to define API endpoints, handle data validation, and leverage Python's type system.
+uvicorn # is the server that runs your FastAPI application and handles incoming requests.
+SpeechRecognition  # library to convert audio into text.
+language_tool_python # library for grammar checking and feedback generation.

@@ -21,14 +21,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/speech/recognize-audio/",
+					"raw": "http://localhost:8000/api/speech/recognition/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"/api/speech/recognize-audio/",
+						"/api/speech/recognition/",
 						""
 					]
 				}
