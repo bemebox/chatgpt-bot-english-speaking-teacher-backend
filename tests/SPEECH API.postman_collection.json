@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "60a9d8d6-1944-4fb2-8bef-b2bfd6662758",
+		"name": "SPEECH API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5075208"
+	},
+	"item": [
+		{
+			"name": "RECOGNIZE AUDIO",
+			"request": {
+				"method": "POST",
+				"header": [{"content-type": "application/json"}],
+				"body": {
+					"mode": "raw",
+					"raw": "{'file': 'UklGRtwAAABXQVZFZm10IBAAAAABAAEARKwAABCxAgAEABAAZGF0YYwAAAAA'}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/speech/recognize-audio/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"/api/speech/recognize-audio/",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TASK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/speech/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"/api/speech/health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

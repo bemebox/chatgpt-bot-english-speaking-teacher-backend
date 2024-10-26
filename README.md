@@ -1,6 +1,6 @@
 # English Speaking Teacher Bot
 
-Welcome to the English Mentor Bot project! This Python 3-based bot functions as a proficient English-speaking teacher, guiding users in improve and enhancing their proficiency in the English language.
+Python RESTful API with FastAPI that analyzes audio input for speech improvements in the English language.
 
 ### Version
 1.0.0
@@ -30,6 +30,8 @@ Python 3-based bot english-speaking teacher to assist users in training and impr
 
 The documentation for this project can be found [here](https://github.com/bemebox/chatgpt-bot-english-speaking-teacher-backend/documentation).
 
+[Speech Improvement API](http://127.0.0.1:8000/docs)
+
 ## Getting Started
 
 These instructions will guide you to copy the project from the repository and run it.
@@ -48,8 +50,13 @@ Make sure you have the following installed:
     git clone https://github.com/bemebox/chatgpt-bot-english-speaking-teacher-backend.git
     cd chatgpt-bot-english-speaking-teacher-backend
     ```
+2. Create a new virtual environment:
+    ```bash
+    python -m venv speechenv
+    source speechenv/bin/activate
+    ```
 
-2. Install dependencies:
+3. Install dependencies:
 
     To use environment variables:
     ```bash
@@ -63,14 +70,22 @@ Make sure you have the following installed:
     pip install openai    
     ```
 
+4. Start the FastAPI application:
+    ```bash
+    uvicorn main:app --reload
+    ```
+
+
 ## Usage
 
 To run the English Speaking Teacher Bot, use the following command:
 
 ```bash
-python main.py
+    uvicorn main:app --reload
 ```
+
+
 
 ## Contributors
 
-* **BEOM &copy; 2023**
+* **BEOM &copy; 2024**
