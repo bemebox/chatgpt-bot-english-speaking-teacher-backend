@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from models.audio_base64 import AudioBase64Payload
-from services.speech_analysis import recognize_audio_from_base64
+from app.models.audio_base64 import AudioBase64Payload
+from app.services.speech_analysis import recognize_audio_from_base64
 
 router = APIRouter()
 
